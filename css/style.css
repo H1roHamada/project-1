@@ -52,7 +52,7 @@ img {
 
 @media (max-width: 829px) {
   .sidebar {
-    /* display: none; */
+    width: 290px;
     margin-left: 0 !important;
     position: fixed;
     top: 0;
@@ -67,6 +67,9 @@ img {
   }
   .sidebar--mobile-active {
     transform: translateX(-0%);
+  }
+  .widget__title::after {
+    right: 15px;
   }
 }
 
@@ -249,7 +252,7 @@ a.card-link:hover {
   width: 20px;
   height: 20px;
   position: absolute;
-  right: 1px;
+  right: 0;
   top: -1px;
   background-image: url('../assets/img/icons/chevron-up.svg');
   background-repeat: no-repeat;
