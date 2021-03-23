@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  background-color: #f4f4f4;
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 15px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 830px;
+  }
+}
+
+@media (max-width: 829px) {
+  .container {
+    max-width: 600px;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main {
+  width: 870px;
+}
+
+.card-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-holder>.card-link {
+  margin-bottom: 30px;
+}
+
+
+/* CARD */
+
+a.card-link {
+  display: inline-block;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+
+a.card-link:hover {
+  opacity: .9;
+  transform: scale(1.05);
+}
+
+.card {
+  position: relative;
+  width: 270px;
+  background-color: #fff;
+}
+
+.card__badges {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  display: flex;
+}
+
+.card__badges>*+* {
+  margin-left: 10px;
+}
+
+.card__badge {
+  display: inline-block;
+  height: 22px;
+  padding: 0 10px;
+  background-color: #a3a3a3;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 23px;
+  color: #000;
+}
+
+.card__badge--class {
+  background-color: #ffcf26;
+}
+
+.card__badge--credit {
+  color: #fff;
+  background-color: #11BE75;
+  ;
+}
+
+.card__img img{
+    width: 270px;
+}
+
+.card__content {
+  font-size: 14px;
+  padding: 16px 15px 20px;
+  color: #000;
+  line-height: 1.14;
+}
+
+.card__title {
+  margin: 0;
+  margin-bottom: 11px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.16;
+}
+
+.card__term {
+  margin-bottom: 11px;
+}
+
+.card__metro {
+  margin-bottom: 11px;
+}
+
+.card__metro::before {
+  content: '';
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: baseline;
+  width: 16px;
+  height: 11px;
+  background-image: url('../assets/img/icons/metro.svg');
+  background-repeat: no-repeat;
+  background-size: initial;
+}
+
+.card__address {
+  color: #777777;
+}
